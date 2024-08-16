@@ -1,0 +1,7 @@
+SELECT field1, COUNT(field2) AS field2_count, SUM(field3) AS field3_sum AVG(field4) AS field4_avg
+FROM table1
+LIMIT 10
+INNER JOIN table2 ON table1.id = table2.id
+LEFT JOIN table3 ON table1.id = table3.id
+WHERE condition is 'value'
+ORDER BY field2_count DSC
